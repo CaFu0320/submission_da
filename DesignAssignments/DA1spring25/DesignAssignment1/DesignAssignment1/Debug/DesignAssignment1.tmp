@@ -1,0 +1,33 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328P"</DEVICE>
+ <WORKING_DIR>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DesignAssignment1\DesignAssignment1\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DesignAssignment1\DesignAssignment1\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\avrasm\inc\m328Pdef.inc</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DesignAssignment1\DesignAssignment1\Debug\DesignAssignment1.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>DesignAssignment1.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>DesignAssignment1.map</FILE>
+  <FILE>DesignAssignment1.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <KEY><FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DesignAssignment1\DesignAssignment1\main.asm</FILE><LINE>362</LINE></KEY>
+  <L1><FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DesignAssignment1\DesignAssignment1\main.asm</FILE><LINE>29</LINE></L1>
+  <STORE_IN_EEPROM><FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DesignAssignment1\DesignAssignment1\main.asm</FILE><LINE>49</LINE></STORE_IN_EEPROM>
+  <TEAfunction><FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DesignAssignment1\DesignAssignment1\main.asm</FILE><LINE>59</LINE></TEAfunction>
+  <LOAD_FROM_EEPROM><FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DesignAssignment1\DesignAssignment1\main.asm</FILE><LINE>40</LINE></LOAD_FROM_EEPROM>
+  <MESSAGE><FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DesignAssignment1\DesignAssignment1\main.asm</FILE><LINE>354</LINE></MESSAGE>
+  <END><FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DesignAssignment1\DesignAssignment1\main.asm</FILE><LINE>349</LINE></END>
+ </LABELS>
+</ASSEMBLER_INFO>
