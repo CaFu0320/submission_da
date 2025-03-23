@@ -1,0 +1,36 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328PB"</DEVICE>
+ <WORKING_DIR>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DA2PART1ASSEMBLY\DA2PART1ASSEMBLY\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DA2PART1ASSEMBLY\DA2PART1ASSEMBLY\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\avrasm\inc\m328PBdef.inc</FILE>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\avrasm\inc\M328PBDEF.INC</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DA2PART1ASSEMBLY\DA2PART1ASSEMBLY\Debug\DA2PART1ASSEMBLY.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>DA2PART1ASSEMBLY.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>DA2PART1ASSEMBLY.map</FILE>
+  <FILE>DA2PART1ASSEMBLY.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <MAIN><FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DA2PART1ASSEMBLY\DA2PART1ASSEMBLY\main.asm</FILE><LINE>29</LINE></MAIN>
+  <DELAY_150MS><FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DA2PART1ASSEMBLY\DA2PART1ASSEMBLY\main.asm</FILE><LINE>12</LINE></DELAY_150MS>
+  <L1><FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DA2PART1ASSEMBLY\DA2PART1ASSEMBLY\main.asm</FILE><LINE>14</LINE></L1>
+  <L2><FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DA2PART1ASSEMBLY\DA2PART1ASSEMBLY\main.asm</FILE><LINE>16</LINE></L2>
+  <L3><FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DA2PART1ASSEMBLY\DA2PART1ASSEMBLY\main.asm</FILE><LINE>18</LINE></L3>
+  <WHILE><FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DA2PART1ASSEMBLY\DA2PART1ASSEMBLY\main.asm</FILE><LINE>40</LINE></WHILE>
+  <CHECKER><FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DA2PART1ASSEMBLY\DA2PART1ASSEMBLY\main.asm</FILE><LINE>45</LINE></CHECKER>
+  <LED_ON><FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DA2PART1ASSEMBLY\DA2PART1ASSEMBLY\main.asm</FILE><LINE>50</LINE></LED_ON>
+  <L0><FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DA2PART1ASSEMBLY\DA2PART1ASSEMBLY\main.asm</FILE><LINE>53</LINE></L0>
+ </LABELS>
+</ASSEMBLER_INFO>
