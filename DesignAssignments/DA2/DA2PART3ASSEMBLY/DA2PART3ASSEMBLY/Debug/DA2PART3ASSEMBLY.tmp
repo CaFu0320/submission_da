@@ -1,0 +1,37 @@
+<ASSEMBLER_INFO>
+ <VERSION>2.2.8</VERSION>
+ <DEVICE>"ATmega328PB"</DEVICE>
+ <WORKING_DIR>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DA2PART3ASSEMBLY\DA2PART3ASSEMBLY\Debug</WORKING_DIR>
+ <INCLUDE_PATH>
+  <DIR>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\avrasm\inc</DIR>
+  <DIR>C:\Program Files (x86)\Atmel\Studio\7.0\toolchain\avr8\avrassembler\Include</DIR>
+  <DIR></DIR>
+ </INCLUDE_PATH>
+ <SOURCE_FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DA2PART3ASSEMBLY\DA2PART3ASSEMBLY\main.asm</SOURCE_FILE>
+ <INCLUDED_FILES>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\avrasm\inc\m328PBdef.inc</FILE>
+  <FILE>C:/Program Files (x86)\Atmel\Studio\7.0\Packs\atmel\ATmega_DFP\1.6.364\avrasm\inc\M328PBDEF.INC</FILE>
+ </INCLUDED_FILES>
+ <OBJECT_FILES>
+  <FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DA2PART3ASSEMBLY\DA2PART3ASSEMBLY\Debug\DA2PART3ASSEMBLY.obj</FILE>
+ </OBJECT_FILES>
+ <HEX_FILES>
+  <FILE>DA2PART3ASSEMBLY.hex</FILE>
+ </HEX_FILES>
+ <OUTPUT_FILES>
+  <FILE>DA2PART3ASSEMBLY.map</FILE>
+  <FILE>DA2PART3ASSEMBLY.lss</FILE>
+ </OUTPUT_FILES>
+ <LABELS>
+  <MAIN><FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DA2PART3ASSEMBLY\DA2PART3ASSEMBLY\main.asm</FILE><LINE>33</LINE></MAIN>
+  <ISR_INT0VECTOR><FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DA2PART3ASSEMBLY\DA2PART3ASSEMBLY\main.asm</FILE><LINE>78</LINE></ISR_INT0VECTOR>
+  <DELAY_150MS><FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DA2PART3ASSEMBLY\DA2PART3ASSEMBLY\main.asm</FILE><LINE>15</LINE></DELAY_150MS>
+  <L1><FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DA2PART3ASSEMBLY\DA2PART3ASSEMBLY\main.asm</FILE><LINE>17</LINE></L1>
+  <L2><FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DA2PART3ASSEMBLY\DA2PART3ASSEMBLY\main.asm</FILE><LINE>19</LINE></L2>
+  <L3><FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DA2PART3ASSEMBLY\DA2PART3ASSEMBLY\main.asm</FILE><LINE>21</LINE></L3>
+  <POLL_LOOP><FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DA2PART3ASSEMBLY\DA2PART3ASSEMBLY\main.asm</FILE><LINE>56</LINE></POLL_LOOP>
+  <WAIT_RELEASE><FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DA2PART3ASSEMBLY\DA2PART3ASSEMBLY\main.asm</FILE><LINE>63</LINE></WAIT_RELEASE>
+  <DELAY_1_5S><FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DA2PART3ASSEMBLY\DA2PART3ASSEMBLY\main.asm</FILE><LINE>70</LINE></DELAY_1_5S>
+  <DELAY_3S><FILE>C:\Users\dante\Documents\Atmel Studio\7.0\Whatever301Cpe\DA2PART3ASSEMBLY\DA2PART3ASSEMBLY\main.asm</FILE><LINE>83</LINE></DELAY_3S>
+ </LABELS>
+</ASSEMBLER_INFO>
