@@ -1,5 +1,8 @@
-Carlos Funes
+Student Name: Carlos Funes
 
-5007995832
+Student ID: 5007995832
 
-funesc2@unlv.nevada.edu
+Student Email: funesc2@unlv.nevada.edu
+
+Primary Github Address: https://github.com/CaFu0320
+
