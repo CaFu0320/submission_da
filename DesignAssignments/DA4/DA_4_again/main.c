@@ -32,22 +32,23 @@ void adc_init(void) {
 	//configuring ADC
 	ADMUX = (1 << REFS0); //reference voltage (AVcc)
 	ADCSRB = (1 << ADTS1) | (1 << ADTS0); //timer0 Compare Match A trigger source
-	ADCSRA = (1 << ADEN) | (1 << ADATE) | (1 << ADIE) | (1 << ADPS2) | (1 << ADPS1);
-	//enable ADC, auto-trigger, interrupt, prescaler = 64
+	ADCSRA = (1 << ADEN) | (1 << ADATE) | (1 << ADIE) | (1 << ADPS2) | (1 << ADPS1) | (1 << ADPS0);
+
+	//enable ADC, auto-trigger, interrupt, prescaler = 1024
 	
 	DIDR0 = (1 << ADC0D); //disable digital input on ADC0
 }
 
-//timer0 configuration for 10ms (100Hz) interval
+//timer0 configuration for 10ms interval
 void timer0_init(void) {
 	TCCR0A = (1 << WGM01); //CTC mode
-	TCCR0B = (1 << CS01) | (1 << CS00); //prescaler = 64
-	OCR0A = 249; //compare value for 10ms
+	TCCR0B = (1 << CS02) | (1 << CS00); // prescaler 1024
+	OCR0A = 155; //10ms
 	TIMSK0 = (1 << OCIE0A); //enable compare match interrupt
 }
 
-volatile uint16_t adc_value = 0;
-volatile uint8_t adc_ready = 0;
+volatile uint16_t adc_value = 0; //stores latest ADC result
+volatile uint8_t adc_ready = 0; //flag indicating new ADC value is ready
 
 //interrupt service routines
 
@@ -67,8 +68,8 @@ int main(void) {
 	timer0_init(); //initialize timer for auto-trigger
 	sei(); //enable global interrupts
 	
-	char buffer[20];
-	float voltage;
+	char buffer[20]; //holding the formatted voltage value
+	float voltage; //store the formatted voltage
 
 	while (1) {  //loop to display data 
 		if (adc_ready) {
