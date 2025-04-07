@@ -19,15 +19,15 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   CONTENTS, READONLY, DEBUGGING
   7 .debug_abbrev 000009f0  00000000  00000000  00001dad  2**0
                   CONTENTS, READONLY, DEBUGGING
-  8 .debug_line   0000037a  00000000  00000000  0000279d  2**0
+  8 .debug_line   0000037b  00000000  00000000  0000279d  2**0
                   CONTENTS, READONLY, DEBUGGING
   9 .debug_frame  000000d0  00000000  00000000  00002b18  2**2
                   CONTENTS, READONLY, DEBUGGING
- 10 .debug_str    00000502  00000000  00000000  00002be8  2**0
+ 10 .debug_str    000004fb  00000000  00000000  00002be8  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_loc    000001ea  00000000  00000000  000030ea  2**0
+ 11 .debug_loc    000001ea  00000000  00000000  000030e3  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_ranges 00000048  00000000  00000000  000032d4  2**0
+ 12 .debug_ranges 00000048  00000000  00000000  000032cd  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -210,10 +210,11 @@ void adc_init(void) {
 	ADCSRB = (1 << ADTS1) | (1 << ADTS0); //timer0 Compare Match A trigger source
      238:	83 e0       	ldi	r24, 0x03	; 3
      23a:	80 93 7b 00 	sts	0x007B, r24	; 0x80007b <__TEXT_REGION_LENGTH__+0x7f807b>
-	ADCSRA = (1 << ADEN) | (1 << ADATE) | (1 << ADIE) | (1 << ADPS2) | (1 << ADPS1);
-     23e:	8e ea       	ldi	r24, 0xAE	; 174
+	ADCSRA = (1 << ADEN) | (1 << ADATE) | (1 << ADIE) | (1 << ADPS2) | (1 << ADPS1) | (1 << ADPS0);
+     23e:	8f ea       	ldi	r24, 0xAF	; 175
      240:	80 93 7a 00 	sts	0x007A, r24	; 0x80007a <__TEXT_REGION_LENGTH__+0x7f807a>
-	//enable ADC, auto-trigger, interrupt, prescaler = 64
+
+	//enable ADC, auto-trigger, interrupt, prescaler = 1024
 	
 	DIDR0 = (1 << ADC0D); //disable digital input on ADC0
      244:	81 e0       	ldi	r24, 0x01	; 1
@@ -223,23 +224,23 @@ void adc_init(void) {
 0000024c <timer0_init>:
 }
 
-//timer0 configuration for 10ms (100Hz) interval
+//timer0 configuration for 10ms interval
 void timer0_init(void) {
 	TCCR0A = (1 << WGM01); //CTC mode
      24c:	82 e0       	ldi	r24, 0x02	; 2
      24e:	84 bd       	out	0x24, r24	; 36
-	TCCR0B = (1 << CS01) | (1 << CS00); //prescaler = 64
-     250:	93 e0       	ldi	r25, 0x03	; 3
+	TCCR0B = (1 << CS02) | (1 << CS00); // prescaler 1024
+     250:	95 e0       	ldi	r25, 0x05	; 5
      252:	95 bd       	out	0x25, r25	; 37
-	OCR0A = 249; //compare value for 10ms
-     254:	99 ef       	ldi	r25, 0xF9	; 249
+	OCR0A = 155; //10ms
+     254:	9b e9       	ldi	r25, 0x9B	; 155
      256:	97 bd       	out	0x27, r25	; 39
 	TIMSK0 = (1 << OCIE0A); //enable compare match interrupt
      258:	80 93 6e 00 	sts	0x006E, r24	; 0x80006e <__TEXT_REGION_LENGTH__+0x7f806e>
      25c:	08 95       	ret
 
 0000025e <__vector_14>:
-volatile uint8_t adc_ready = 0;
+volatile uint8_t adc_ready = 0; //flag indicating new ADC value is ready
 
 //interrupt service routines
 
@@ -309,8 +310,8 @@ int main(void) {
 	sei(); //enable global interrupts
      2c8:	78 94       	sei
 	
-	char buffer[20];
-	float voltage;
+	char buffer[20]; //holding the formatted voltage value
+	float voltage; //store the formatted voltage
 
 	while (1) {  //loop to display data 
 		if (adc_ready) {
